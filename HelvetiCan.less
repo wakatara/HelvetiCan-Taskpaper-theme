@@ -1,0 +1,162 @@
+// See http://guide.taskpaper.com/creating_themes.html to get started.
+// UI Scale
+@base-font-size: 16;
+@user-font-size: $USER_FONT_SIZE;
+@ui-scale: @user-font-size / @base-font-size;
+
+// UI Colors
+// @tint-color: rgb(0, 122, 255);
+@tint-color: #fb3332;
+@selection-color: mix(@tint-color, @background-color, 30%); // rgb(148, 192, 255);
+@invisibles-color: mix(@tint-color, @background-color, 70%); // rgb(67, 119, 211);
+
+// Base text
+@text-color: rgb(20%, 20%, 20%);
+@background-color: white;
+@font-family: "Helvetica Neue";
+@line-height-multiple: 1.1;
+
+editor {
+  color: @text-color;
+  ui-scale: @ui-scale;
+  font-size: @user-font-size;
+  font-family: @font-family;
+  background-color: @background-color;
+  line-height-multiple: @line-height-multiple;
+  item-indent: 20 * @ui-scale;
+  caret-width: floor(2 * @ui-scale);
+  caret-color: @tint-color;
+  drop-indicator-color: @tint-color;
+  invisibles-color: @invisibles-color;
+  folded-items-label: "¶—¶";
+  filtered-items-label: "¶—¶";
+  item-handle-size: floor(7 * @ui-scale);
+  selection-background-color: @selection-color;
+  guide-line-color: mix(@tint-color, @background-color, 10%);
+  guide-line-width: floor(1 * @ui-scale);
+  message-color: mix(@text-color, @background-color, 50%);
+}
+
+item {
+  handle-color: none;
+  handle-border-color: mix(@tint-color, @background-color, 20%);
+  handle-border-width: floor(1 * @ui-scale);
+}
+
+item[collapsed] {
+  handle-color: @tint-color;
+  handle-border-color: none;
+}
+
+item[filtered] {
+  handle-color: mix(@tint-color, @background-color, 20%);
+  handle-border-color: none;
+}
+
+item[empty] {
+  handle-color: none;
+  handle-border-color: none;
+}
+
+item[data-type="note"] {
+  color: rgba(40%, 40%, 40%, 1.0);
+  // font-size: (@user-font-size * 0.95);
+  weight: lighter(@text-color, 10%);
+  font-style: normal;
+}
+
+item[data-type="task"] {
+  font-style: normal;
+}
+
+item[data-type="project"] {
+  color: rgba(0, 66, 128, 1.0);
+  line-height-multiple: 1.5;
+  font-size: 18;
+}
+
+item[depth="1"].item[data-type="project"] {
+font-size: 22;
+}
+
+item[depth="2"].item[data-type="project"] {
+font-size: 20;
+}
+
+item[data-done] {
+  > run[content] {
+  text-strikethrough: NSUnderlineStyleSingle;
+  text-strikethrough-color: rgba(10, 41, 51, 0.5);
+  color: rgba(10, 41, 51, 0.5);
+  }
+}
+
+item[data-reco] {
+  > run[content] {
+    color: rgba(0, 128, 192, 1.0);
+  }
+  > run[tag=data-reco] {
+    color: rgba(0, 128, 192, 1.0);
+  }
+}
+
+item[data-wip] {
+  > run[content] {
+    color: rgba(51, 128, 26, 1.0);
+  }
+  > run[tag=data-wip] {
+    color: rgba(51, 128, 26, 1.0);
+  }
+}
+
+item[data-today] {
+  > run[content] {
+    color: rgba(255, 128, 64, 1.0);
+  }
+  > run[tag=data-today] {
+    color: rgba(255, 128, 64, 1.0);
+  }
+}
+
+item[data-new] {
+  > run[tag=data-new] {
+    color: rgba(51, 128, 26, 1.0);
+  }
+}
+
+item[data-due] {
+  > run[tag=data-due] {
+    color: rgba(255, 128, 64, 1.0);
+  }
+}
+
+run[link] {
+  cursor: pointer;
+  color: rgba(0, 128, 192, 1.0);
+}
+
+run[link^="button"] {
+  color: @text-color;
+}
+
+run[link^="filter"] {
+  color: @text-color;
+}
+
+item[data-cancel] {
+  > run[content] {
+    color: mix(@text-color, @background-color, 35%);
+  }
+}
+
+run[tag] {
+  font-size: @user-font-size;
+  font-style: normal;
+  font-weight: normal;
+  color: mix(@text-color, @background-color, 35%);
+}
+
+// Sidebar
+sidebar {
+    search-item-prefix: "🔍 ";
+}

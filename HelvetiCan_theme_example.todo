@@ -1,0 +1,20 @@
+HelvetiCan:
+	Theme for Taskpaper 3 ported from the HelvetiCan Taskpaper 2 theme
+	Optimized for scanning and focus on task management and GTD
+	
+	- Softer black for all task or list items
+	- A nice way inconspicuous greying to remove @done items from cluttering your scanning
+		Notes simply sit below a list item in a slightly softer black than the list items
+	- I find @tags useful for searching and categorization only, so soft grey
+	- A nice orange-red for items urgently marked for @today
+	- A nice @new(2016-11-19) tag to let you remember when you added something
+	- Move that entire item to the same green if you move it to active with an @wip tag
+	- And if it's got a @due(2016-11-20) date, you should definitely be able to easily notice that on scanning
+	- Links such as https://blog.wakatara.com or email@someplace.io are highlighted, cursor changes on rollover, and are clickable
+	- Things that are @cancel(2016-11-19) are greyed out but not marked done in case you want to leave them in-place without archiving
+	- I make heavy use of @week(47) tags to denote what week items are in so i have a week list, rather than particular days. Makes it much easier to manage things with searches like `@week(47) and not @done`
+		
+		Subprojects:
+		Have different sized headers to make nesting obvious
+
+
