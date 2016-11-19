@@ -74,4 +74,4 @@ folder`
 
 Please feel free to raise any issues or PRs in the Github Issues section for bugs or
 ways to improve the theme for everyone. Pull requests obviously very welcome.
--
+
