@@ -5,20 +5,23 @@ with the new [Taskpaper 3](http://taskpaper.com).
 
 ![](https://raw.githubusercontent.com/wakatara/HelvetiCan-Taskpaper-theme/master/HelvetiCan_taskpaper_theme_preview.png)
 
-I probably use Taskpaper much differently that most people. I organize things
+I probably use Taskpaper much differently than most people. I organize things
 weekly, so make heavy use of an `@week(week_number)` tag which I find helps me
-manage and control the very many tasks I have as well as easily move things into
-the future (as one of the main things I need to do is followup with people on
+manage and control the many tasks I have flow-wise and that need triaging in
+terms of priority and sequencing -- as well as easily moving things into the
+future (as one of the main things I need to do is followup with people on
 tasks or things they said they'd do.).
 
 So, I tend to make heavy use of searches like `@week = 45 and not @done` to
 look at all my tasks organized by client/project, picking a task, updating it
-based on actioning it and then moving it into a future week for followup
+based on actioning it, and then moving it into a future week for followup
 (ie. tagging the item with `emailed 2016-11-07 - fup @week(47)`). This works
 *very* well for me.
 
 This theme helps keep me focused and colour codes the things that are critical
-for me as well as tracking things in process.
+for me as well as tracking things in process so I can just focus on what needs
+to be done next and making sure nothing slips through the cracks or falls off
+the edge of the world (or to someone I delegated to.).
 
 ## Featuring
 
@@ -55,7 +58,7 @@ folder`
 
 ## TODO
 
-- Font - Not convinced Helvetica Neue is the optimal font for
+- Font - Not completely convinced Helvetica Neue is the optimal font for
   readability and information density, so experimenting a bit there. Please feel
   free to change `@font-family` in the stylesheet and let me know if you find a
   distinct readability or "density scanning" advantages to another font
