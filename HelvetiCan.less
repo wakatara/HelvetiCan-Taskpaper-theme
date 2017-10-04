@@ -13,7 +13,7 @@
 // Base text
 @text-color: rgb(20%, 20%, 20%);
 @background-color: white;
-@font-family: "Helvetica Neue";
+@font-family: "-apple-system";
 @line-height-multiple: 1.1;
 
 editor {
@@ -91,15 +91,6 @@ item[data-done] {
   }
 }
 
-item[data-reco] {
-  > run[content] {
-    color: rgba(0, 128, 192, 1.0);
-  }
-  > run[tag=data-reco] {
-    color: rgba(0, 128, 192, 1.0);
-  }
-}
-
 item[data-wip] {
   > run[content] {
     color: rgba(51, 128, 26, 1.0);
@@ -115,6 +106,33 @@ item[data-today] {
   }
   > run[tag=data-today] {
     color: rgba(255, 128, 64, 1.0);
+  }
+}
+
+item[data-wait] {
+  > run[content] {
+    color: rgba(0, 128, 192, 1.0);
+  }
+  > run[tag=data-wait] {
+    color: rgba(0, 128, 192, 1.0);
+  }
+}
+
+item[data-hold] {
+  > run[content] {
+    color: rgba(0, 128, 192, 1.0);
+  }
+  > run[tag=data-hold] {
+    color: rgba(0, 128, 192, 1.0);
+  }
+}
+
+item[data-reco] {
+  > run[content] {
+    color: rgba(89, 90, 183, 1.0);
+  }
+  > run[tag=data-reco] {
+    color: rgba(89, 90, 183, 1.0);
   }
 }
 
