@@ -83,14 +83,6 @@ item[depth="2"].item[data-type="project"] {
 font-size: 20;
 }
 
-item[data-done] {
-  > run[content] {
-  text-strikethrough: NSUnderlineStyleSingle;
-  text-strikethrough-color: rgba(10, 41, 51, 0.5);
-  color: rgba(10, 41, 51, 0.5);
-  }
-}
-
 item[data-wip] {
   > run[content] {
     color: rgba(51, 128, 26, 1.0);
@@ -172,6 +164,24 @@ run[tag] {
   font-style: normal;
   font-weight: normal;
   color: mix(@text-color, @background-color, 35%);
+}
+
+// The difference between done and fin is that @done gets used for tasks that
+// will be moved to archive (ie. unordered lists) while @fin is used for 
+// ordered lists to track overall progress in-place ie. reading lists etc (and 
+// eventually @done the entire list for archiving once "done done". =] ) 
+item[data-fin] {
+  > run[content] {
+  color: rgba(10, 41, 51, 0.5);
+  }
+}
+
+item[data-done] {
+  > run[content] {
+  text-strikethrough: NSUnderlineStyleSingle;
+  text-strikethrough-color: rgba(10, 41, 51, 0.5);
+  color: rgba(10, 41, 51, 0.5);
+  }
 }
 
 // Sidebar
