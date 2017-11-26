@@ -12,11 +12,11 @@ terms of priority and sequencing -- as well as easily moving things into the
 future (as one of the main things I need to do is followup with people on
 tasks or things they said they'd do.).
 
-So, I tend to make heavy use of searches like `@week = 45 and not @done` to
-look at all my tasks organized by client/project, picking a task, updating it
-based on actioning it, and then moving it into a future week for followup
-(ie. tagging the item with `emailed 2016-11-07 - fup @week(47)`). This works
-*very* well for me.
+So, I make heavy use of searches like `@week = 45 and not @done` to look at all
+my tasks organized by client/project, picking a task, updating it based on
+actioning it, and then moving it into a future week for followup (ie. tagging
+the item with `emailed 2016-11-07 - fup @week(47)`). This works *very* well for
+me.
 
 This theme helps keep me focused and colour codes the things that are critical
 for me as well as tracking things in process so I can just focus on what needs
@@ -31,18 +31,22 @@ the edge of the world (or to someone I delegated to.).
 - Moves entire item to green when started with the `@wip` tag ie
   `@wip(yyyy-mm-dd)`
 - Red tag for items with a due date `@due(2016-12-25)`
-- Red for items tagged `@today`
+- Red line items tagged `@today`
 - Links for email or urls within an items are in a nice, clickable blue
 - Tags are in a not-in-your-face grey so they do not distract from item text
 - Notes are in a slightly darker grey to provide contrast but distract from item
   text
-- Recommended items are in blue with a nice `@reco` tag (I have lots of lists)
+- Recommended items are in a light, non-distracting purple with a nice `@reco` tag (I have lots of lists)
 - `@done(yyyy-mm-dd)` items are greyed out and a line runs through them
 - `@cancel(yyyy-mm-dd)` items just end up being greyed out
+- `@fin(yyyy-mm-dd)` items are greyed out (useful for lists you do not want
+  archived as individual list items - like a Reading list etc.)
+- I tag delegated and items I'm holding on with `@wait` which is in blue to
+  distinguish it in lists
 
-I do not use `@priority` or various other tags and removed `@waiting` since anything
-not done is waiting on someone or something to happen and I manage that with
-my default search `@week(x) and not @done`.
+I do not use `@priority` so no tag for that.
+
+I manage my days with my default search `@week(x) and not @done`.
 
 ## Installation
 
@@ -58,15 +62,16 @@ folder`
 
 ## TODO
 
-- Font - Not completely convinced Helvetica Neue is the optimal font for
-  readability and information density, so experimenting a bit there. Please feel
-  free to change `@font-family` in the stylesheet and let me know if you find a
-  distinct readability or "density scanning" advantages to another font
+- Font - Not completely convinced San Francisco (or Helvetica Neue) is the
+  optimal font for readability and information density, so experimenting a bit
+  there. Please feel free to change `@font-family` in the stylesheet and let me
+  know if you find a distinct readability or "density scanning" advantages to
+  another font
 - Better testing - I've only tested this on my new Macbook 12" early 2016
   edition which has a different screen resolution than MBAs and Pros. Information
-  density on that screen is good, but curious about other people
+  density on that screen is good, but curious about other people's experience
 - Notes don't automatically align with the text below their item. Trying to
-  figure out how to sort that out to asve people time.
+  figure out how to sort that out to save people time.
 - Highlighting for +Name - I have to delegate or note people contacted a *lot*,
   so have a system where I add +Name to items to denote who was relevant. I am
   still trying to figure out how to highlight that in an item well under TP3 and
