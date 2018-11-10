@@ -12,7 +12,7 @@
 
 // Base text
 @text-color: rgb(20%, 20%, 20%);
-@background-color: white;
+@background-color: rgba(95%, 95%, 95%, 1.0);
 @font-family: "-apple-system";
 @line-height-multiple: 1.1;
 
@@ -35,6 +35,17 @@ editor {
   guide-line-color: mix(@tint-color, @background-color, 10%);
   guide-line-width: floor(1 * @ui-scale);
   message-color: mix(@text-color, @background-color, 50%);
+}
+
+searchbar {
+  color: rgba(100%, 100%, 100%, 1.0);
+  background-color: rgba(0, 0, 0, 1.0);
+}
+
+// Sidebar
+sidebar {
+  appearance: NSAppearanceNameVibrantDark;
+  search-item-prefix: "🔍 ";
 }
 
 item {
@@ -182,9 +193,4 @@ item[data-done] {
   text-strikethrough-color: rgba(10, 41, 51, 0.5);
   color: rgba(10, 41, 51, 0.5);
   }
-}
-
-// Sidebar
-sidebar {
-    search-item-prefix: "🔍 ";
 }
